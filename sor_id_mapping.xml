@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectToObjectConversionTable Version="1.0" FromType="GO" ToType="GO">
+   <ConversionTableInfo Version="1.1" FromProduct="HOB" ToProduct="HOB" Name="sor_id Mapping" CreationDate="2021-01-26"
+       CreatedBy="CHS Atlantic" Comment="Mapping the sor_id from 1234.... |2|4567..... to 1234.....">
+   </ConversionTableInfo>
+   <AttributeMappings>
+       <MapAttribute Name="sor_idtosor_id">
+           <Entry>
+               <Filter>
+                   <AttributeValueIsLike Acronym="sor_id" Value="3004070\b.*"/>
+               </Filter>
+               <SetAttributeValue Acronym="sor_id" Value="3004070"/>
+           </Entry>
+           <Entry>
+               <Filter>
+                   <AttributeValueIsLike Acronym="sor_id" Value="3004071\b.*"/>
+               </Filter>
+               <SetAttributeValue Acronym="sor_id" Value="3004071"/>
+           </Entry>
+           <Entry>
+               <Filter>
+                   <AttributeValueIsLike Acronym="sor_id" Value="3104620\b.*"/>
+               </Filter>
+               <SetAttributeValue Acronym="sor_id" Value="3104620"/>
+           </Entry>
+           <Entry>
+               <Filter>
+                   <AttributeValueIsLike Acronym="sor_id" Value="3106200\b.*"/>
+               </Filter>
+               <SetAttributeValue Acronym="sor_id" Value="3106200"/>
+           </Entry>
+           <Entry>
+               <Filter>
+                   <AttributeValueIsLike Acronym="sor_id" Value="3106995\b.*"/>
+               </Filter>
+               <SetAttributeValue Acronym="sor_id" Value="3106995"/>
+           </Entry>
+           <Entry>
+               <Filter>
+                   <AttributeValueIsLike Acronym="sor_id" Value="3107184\b.*"/>
+               </Filter>
+               <SetAttributeValue Acronym="sor_id" Value="3107184"/>
+           </Entry>
+           <Entry>
+               <Filter>
+                   <AttributeValueIsLike Acronym="sor_id" Value="3107480\b.*"/>
+               </Filter>
+               <SetAttributeValue Acronym="sor_id" Value="3107480"/>
+           </Entry>
+           <Entry>
+               <Filter>
+                   <AttributeValueIsLike Acronym="sor_id" Value="3107698\b.*"/>
+               </Filter>
+               <SetAttributeValue Acronym="sor_id" Value="3107698"/>
+           </Entry>
+           <Entry>
+               <Filter>
+                   <AttributeValueIsLike Acronym="sor_id" Value="3107989\b.*"/>
+               </Filter>
+               <SetAttributeValue Acronym="sor_id" Value="3107989"/>
+           </Entry>
+           <Entry>
+               <Filter>
+                   <AttributeValueIsLike Acronym="sor_id" Value="3107995\b.*"/>
+               </Filter>
+               <SetAttributeValue Acronym="sor_id" Value="3107995"/>
+           </Entry>
+       </MapAttribute>
+   </AttributeMappings>
+   <ObjectMappings>
+       <Object Acronym= "SOUNDG">
+           <MapObject>
+               <ApplyAttributeMapping Name="sor_idtosor_id"/>
+           </MapObject>
+       </Object>
+   </ObjectMappings>
+</ObjectToObjectConversionTable>
